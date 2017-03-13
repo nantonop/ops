@@ -21,6 +21,7 @@ def selectiveDeleter(path):
             filename = os.path.join(root, name)
             extension = os.path.splitext(filename)[1]
             filename_without_extension = os.path.splitext(name)[0]
+            #toDo add logic for different extensions
             if extension == '.zip':
                 print 'Deleting: ', filename
                 os.unlink(filename)
